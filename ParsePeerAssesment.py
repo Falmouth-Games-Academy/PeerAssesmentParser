@@ -5,8 +5,7 @@ from os import walk
 
 #walk a directoy which contains a series of html files
 html_src_path="PeerAssessments"
-qualitive_xls_dest_path="Peer-Qualitive.xlsx"
-quantitve_xls_dest_path="Peer-Quantitive.xlsx"
+xls_dest_path="peerassessments.xlsx"
 
 assesment_form_html_id="mform3"
 checkbox_type="radio"
@@ -149,4 +148,4 @@ def parse_feedback_files(filenames,dest_filename):
     workbook.close()
 
 files_to_parse=get_html_files(html_src_path)
-parse_feedback_files(files_to_parse,quantitve_xls_dest_path)
+parse_feedback_files(files_to_parse,xls_dest_path)
